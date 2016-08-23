@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>4.112.3.0</ProductVersion>
+    <ProjectGuid>{4563eb69-50b6-4acc-b9f2-dc1a10d9cf88}</ProjectGuid>
+    <AssemblyName>SocialSignOn</AssemblyName>
+    <Name>SocialSignOn</Name>
+    <RootNamespace>SocialSignOn</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <DBRefs Include="Database References\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Packages\" />
+    <Folder Include="Procedures\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Security\" />
+    <Folder Include="Security\Permissions\" />
+    <Folder Include="Security\Roles\" />
+    <Folder Include="Security\Users\" />
+    <Folder Include="Sequences\" />
+    <Folder Include="Synonyms\" />
+    <Folder Include="Tables\" />
+    <Folder Include="Tables\Triggers\" />
+    <Folder Include="User Defined Types\" />
+    <Folder Include="User Defined Types\Nested Tables\" />
+    <Folder Include="User Defined Types\Objects\" />
+    <Folder Include="User Defined Types\VARRAYs\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Triggers\" />
+    <Folder Include="XML Schemas\" />
+    <Folder Include="AQ\" />
+    <Folder Include="AQ\Queues\" />
+    <Folder Include="AQ\Queue Tables\" />
+    <DBRefs Include="Database References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <DBRef Include="Database References\EUROSTRATEGY.SSO\">
+      <ConnectionString>DATA SOURCE=EUROSTRATEGY;PERSIST SECURITY INFO=True;USER ID=SSO</ConnectionString>
+      <IsDefault>true</IsDefault>
+    </DBRef>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Packages\EUROSTRATEGY.SSO.ABOUT.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.ABOUT_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.AUTHENTICATE_LNKD.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.AUTHENTICATE_LNKD_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.ERROR_HANDLER.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.ERROR_HANDLER_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.GLOBAL_CONSTANTS.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.GLOBAL_CONSTANTS_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.HOME.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.HOME_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.SIGNON.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.SIGNON_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.UTIL.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Packages\EUROSTRATEGY.SSO.UTIL_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Procedures\EUROSTRATEGY.SSO.AUTHENTICATE_LNKD_CALLBACK.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Defined Types\Objects\EUROSTRATEGY.SSO.LINKEDIN.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Defined Types\Objects\EUROSTRATEGY.SSO.LINKEDIN_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Defined Types\Objects\EUROSTRATEGY.SSO.OAUTH.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Defined Types\Objects\EUROSTRATEGY.SSO.OAUTH_body.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
